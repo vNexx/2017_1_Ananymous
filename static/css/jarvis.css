@@ -1,0 +1,52 @@
+body {
+  background: #222 url(../images/background.jpg);
+  color: #fff;
+  background-size: cover;
+}
+.menu {
+  margin-top: 30px;
+  background: url(../images/jarvis_menu.png);
+  background-size: contain;
+  height: 450px;
+}
+
+.round-button {
+  background: #07C9F4;
+  border: #07c9f4 1px solid;
+  border-radius: 50%;
+  color: #000;
+  height: 50px;
+  padding-top: 15px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  font-size: larger;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+}
+
+.round-button:hover {
+  color: #000;
+  background-color: #F49E07;
+  border-color: #F49E07;
+}
+.login-button {
+  margin-top: 75px;
+  margin-left: 495px;
+}
+
+.register-button {
+  margin-top: 75px;
+  margin-left: 80px;
+}
+
+.home-button {
+  margin-top: 180px;
+  margin-left: 60px;
+}
+
+.about-button {
+  margin-top: 180px;
+  margin-left: 550px;
+}
