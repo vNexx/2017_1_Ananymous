@@ -3,6 +3,10 @@ body {
   color: #fff;
   background-size: cover;
 }
+
+hr {
+  border-color: #07c9f4;
+}
 .menu {
   margin-top: 30px;
   background: url(../images/jarvis_menu.png);
@@ -28,8 +32,14 @@ body {
 
 .round-button:hover {
   color: #000;
+  background-color: #0663CB;
+  border-color: #0663CB;
+}
+
+.round-button:active {
   background-color: #F49E07;
   border-color: #F49E07;
+  color: #000;
 }
 .login-button {
   margin-top: 75px;
@@ -49,4 +59,47 @@ body {
 .about-button {
   margin-top: 180px;
   margin-left: 550px;
+}
+
+.input-dark {
+  background-color: #05344E4D;
+  border-color: #065C55;
+  color: #07c9f4;
+  margin-top: 5px;
+}
+
+.form-background-dark {
+  margin-top: 10px;
+  padding: 15px;
+  background: rgba(0,0,0,0.6);
+}
+
+.label-dark {
+  color: #07c9f4;
+  border-radius: 10px;
+  background: radial-gradient(rgba(0,0,0,1), rgba(0,0,0,0.1));
+  margin-top: 5px;
+  text-align: center;
+  padding: 5px;
+}
+
+.btn-flat {
+  margin: 5px;
+  color: #00f2fb;
+  background-color: #127E7E33;
+  border: #07c9f4 2px solid;
+  padding-top: 5px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+}
+
+.btn-flat:hover {
+  background-color: #07C3C399;
+}
+
+.btn-flat:active {
+  background-color: #F49E0799;
+  border-color: #F49E07;
+  color: #fff;
 }
