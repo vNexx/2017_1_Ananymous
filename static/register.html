@@ -2,154 +2,94 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Register</title>
+    <title>Log in</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="css/jarvis.css" rel="stylesheet">
+    <link href="css/game.css" rel="stylesheet">
   </head>
   <body>
-    <nav class="navbar navbar-inverse" role="navigation">
-    <div class="navbar-header">
-     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-
-       <span class="sr-only">Toggle navigation</span>
-       <span class="icon-bar"></span>
-       <span class="icon-bar"></span>
-       <span class="icon-bar"></span>
-     </button>
-     <a class="navbar-brand" href="/">
-       <img src="images/logo.png" alt="Logo" width="40">
-     </a>
-    </div>
-
-
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-     <ul class="nav navbar-nav">
-       <li><a href="/jarvis.html">Номе <span class="sr-only">(current)</span></a></li>
-       <li class="dropdown">
-         <a class="dropdown-toggle" data-toggle="dropdown" href="#">olollolol <span class="caret"></span></a>
-         <ul class="dropdown-menu">
-           <li><a href="#">cghscsdj </a></li>
-           <li><a href="#"> d sidbs </a></li>
-         </ul>
-       </li>
-     </ul>
-
-     <!--
-     <form class="navbar-form navbar-left">
-       <div class="form-group">
-         <input type="text" class="form-control" placeholder="Enter your question">
-       </div>
-       <button type="submit" class="btn btn-dark"><span class="glyphicon glyphicon-search"></span></button>
-     </form> -->
-
-     <ul class="nav navbar-nav navbar-right">
-       <li class="dropdown">
-         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-           <img src="#" width="30" class="img-circle" alt="avatar">
-           <span class="caret"></span>
-         </a>
-         <ul class="dropdown-menu">
-           <li><a href="#">dcsbdbc</a></li>
-           <li><a href="#">fdvdbjvefdn</a></li>
-           <hr>
-           <li><a href="#">jfdvjdfvd </a></li>
-         </ul>
-       </li>
-     </ul>
-     <ul class="nav navbar-nav navbar-right">
-
-       <li><a href="/register.html">Register</a></li>
-       <li><a href="/login.html"><span class="glyphicon glyphicon-log-in"></span> Log in </a></li>
-     </ul>
-    </div><!-- /.navbar-collapse -->
-  </nav>
-
-
     <div class="row">
-      <div class="col-sm-offset-3 col-sm-5">
-        <div class="label-dark">
-          <h1>Sign up</h1>
+      <div class="col-sm-12">
+        <div class="navbar navbar-transparent">
+          <div class="navbar-content">
+            <a href="index.html" class="link">Home</a>
+            <a href="game.html" class="link">Play</a>
+            <a class="pull-right-button" href="/register.html">
+              <button type="button" class="btn-flat">Sign up</button>
+            </a>
+            <a class="pull-right-button" href="/login.html">
+              <button type="button" class="btn-flat">Sign in</button>
+            </a>
+          </div>
         </div>
-        <hr>
-        <br>
-        <br>
       </div>
-      <div class="col-sm-offset-3 col-sm-5">
-        <form class="form-horizontal content-background-dark" method="post">
-          <fieldset>
+      <div class="col-sm-offset-3 col-sm-6 block-content">
+        <div class="col-sm-12">
+          <div class="header">
+            <h1>Sing up</h1>
+          </div>
+          <hr>
+          <br>
+          <br>
+        </div>
+        <div class="col-sm-8 col-sm-offset-1">
+          <form class="form-horizontal" method="post">
+            <fieldset>
+              <div class="form-group">
+                <label class="col-sm-3 col-sm-offset-1 control-label label-dark">Login</label>
+                <div class="col-sm-7">
+                  <input type="text" class="form-control input-light" placeholder="Username">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-sm-3 col-sm-offset-1 control-label label-dark">E-mail</label>
+                <div class="col-sm-7">
+                  <input type="text" class="form-control input-light" placeholder="example@mail.ru">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-sm-3 col-sm-offset-1 control-label label-dark">First name</label>
+                <div class="col-sm-7">
+                  <input type="text" class="form-control input-light">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-sm-3 col-sm-offset-1 control-label label-dark">Last name</label>
+                <div class="col-sm-7">
+                  <input type="text" class="form-control input-light">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-sm-3 col-sm-offset-1 control-label label-dark">Password</label>
+                <div class="col-sm-7">
+                  <input type="password" class="form-control input-light" placeholder="**********">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-sm-3 col-sm-offset-1 control-label label-dark">Retype password</label>
+                <div class="col-sm-7">
+                  <input type="password" class="form-control input-light" placeholder="**********">
+                </div>
+              </div>
+            </fieldset>
 
             <div class="form-group">
-              <label class="col-sm-3 col-sm-offset-1 control-label label-dark">Login</label>
-              <div class="col-sm-5">
-                <input type="text" class="form-control input-dark" placeholder="Username">
+              <div class="col-sm-8 col-sm-offset-4">
+                <button type="submit" class="btn-flat btn-flat-primary">Register!</button>
               </div>
             </div>
-
-            <div class="form-group">
-              <label class="col-sm-3 col-sm-offset-1 control-label label-dark">E-mail</label>
-              <div class="col-sm-5">
-                <input type="text" class="form-control input-dark" placeholder="example@mail.ru">
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label class="col-sm-3 col-sm-offset-1 control-label label-dark">First name</label>
-              <div class="col-sm-5">
-                <input type="text" class="form-control input-dark">
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label class="col-sm-3 col-sm-offset-1 control-label label-dark">Last name</label>
-              <div class="col-sm-5">
-                <input type="text" class="form-control input-dark">
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label class="col-sm-3 col-sm-offset-1 control-label label-dark">Password</label>
-              <div class="col-sm-5">
-                <input type="password" class="form-control input-dark" placeholder="**********">
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label class="col-sm-3 col-sm-offset-1 control-label label-dark">Retype password</label>
-              <div class="col-sm-5">
-                <input type="password" class="form-control input-dark" placeholder="**********">
-              </div>
-            </div>
-
-          </fieldset>
-
-          <div class="form-group">
-            <div class="col-sm-8 col-sm-offset-4">
-              <button type="submit" class="btn-flat">Register</button>
-            </div>
-           </div>
-
-         <!--
-          <div class="askme__login-error col-lg-5 col-lg-offset-3" role="alert">
-            <span class="glyphicon glyphicon-exclamation-sign"></span>
-          </div>  -->
-        </form>
+          </form>
+        </div>
       </div>
     </div>
 
 
-    <footer>
-      <div id="footer">
-        <hr>
-        <div class="content-background-dark">
-          <p>
-            Site was built in 2017 by Ananymous team.
-            park.mail.ru ©
-          </p>
-        </div>
-      </div>
-    </footer>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>

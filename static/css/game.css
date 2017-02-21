@@ -1,0 +1,117 @@
+body {
+  background: #222 url(../images/background.jpg);
+  color: #fff;
+  background-size: cover;
+}
+
+hr {
+  border-color: #fff;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+.navbar{
+  height: 76px;
+  padding-right: 19px;
+  padding-left: 19px;
+  margin-bottom: 60px;
+  border-radius: 0px;
+}
+.navbar-content {
+  position: relative;
+  z-index: 10;
+  display: block;
+  width: 850px;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.navbar-transparent{
+  background-color: #2222224D;
+  border: none;
+}
+
+.header {
+  text-align: center;
+}
+
+.block-content {
+  background: #0008;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 15px;
+}
+.link {
+  font-size: x-large;
+  color: #fff;
+  padding-top: 15px;
+  padding-right: 25px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+}
+
+.link:hover {
+  background-color: #707b7ecc;
+  color: #fff;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.btn-flat {
+  margin: 5px;
+  color: #fff;
+  background-color: transparent;
+  border: #fff 2px solid;
+  border-radius: 3px;
+  padding-top: 5px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+}
+
+.btn-flat:hover {
+  background-color: #fffe;
+  color: #222;
+}
+
+.btn-flat:active {
+  background-color: #15c311;
+  border-color: #15c311;
+  color: #fff;
+}
+
+.btn-flat-primary {
+  background-color: #066ebb;
+  border-color: #066ebb;
+}
+
+.btn-flat-primary:hover {
+  background-color: #128be4;
+  color: #fff;
+  border-color: #128be4;
+}
+
+.btn-flat-primary:active {
+  background-color: #37aaff;
+  border-color: #37aaff;
+}
+
+.pull-right-button {
+  float: right;
+}
+
+.input-light {
+  background-color: #fffc;
+}
+
+#footer {
+  width: 100%;
+  height: 50px;
+  background-color: #2226;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+}
