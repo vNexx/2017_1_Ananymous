@@ -60,6 +60,31 @@ hr {
   text-decoration: none;
 }
 
+.menu-button {
+  font-size: x-large;
+  color: #fff;
+  background-color: #707b7ecc;
+  border: #707b7ecc 1px solid;
+  border-radius: 3px;
+  padding-top: 15px;
+  padding-right: 25px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+  margin: 5px;
+  width: 140px;
+  height: 70px;
+}
+
+.menu-button:hover {
+  background-color: #91a3a8cc;
+  border-color: #91a3a8cc;
+}
+
+.menu-button:active {
+  background-color: #c6d1d3cc;
+  border-color: #c6d1d3cc;
+}
+
 .btn-flat {
   margin: 5px;
   color: #fff;
