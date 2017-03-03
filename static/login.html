@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Log in</title>
+    <title>Sign in</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
@@ -11,61 +11,58 @@
   <body>
     <div class="row">
       <div class="col-sm-12">
-        <div class="navbar navbar-transparent">
-          <div class="navbar-content">
-            <a href="/index.html">
-              <img src="images/logo.png" width="100px">
-            </a>
-            <a href="index.html" class="link">Home</a>
-            <a href="game.html" class="link">Play</a>
-            <a class="pull-right-button" href="/register.html">
-              <button type="button" class="btn-flat">Sign up</button>
-            </a>
-            <a class="pull-right-button" href="/login.html">
-              <button type="button" class="btn-flat">Sign in</button>
-            </a>
-          </div>
+        <div class="logo">
+          HUNTING
+          <span class="registered_sign">
+            <img src="images/RegisteredTM.png" width="15px" alt="®">
+          </span>
+        </div>
+        <div class="header">
+          SIGN IN
         </div>
       </div>
       <div class="col-sm-offset-3 col-sm-6 block-content">
-        <div class="col-sm-12">
-          <div class="header">
-            <h1>Log in</h1>
-          </div>
-          <hr>
-          <br>
-          <br>
-        </div>
         <div class="col-sm-8 col-sm-offset-1">
           <form class="form-horizontal" method="post">
             <fieldset>
 
               <div class="form-group">
-                <label class="col-sm-3 col-sm-offset-1 control-label">Login</label>
-                <div class="col-sm-7">
-                  <input type="text" class="form-control input-light" placeholder="Username">
+                <!-- <label class="col-sm-3 col-sm-offset-1 control-label">Login</label> -->
+                <div class="col-sm-8 col-sm-offset-3">
+                  <input type="text" class="form-control input-light" placeholder="LOGIN">
                 </div>
               </div>
 
               <div class="form-group">
-                <label class="col-sm-3 col-sm-offset-1 control-label label-dark">Password</label>
-                <div class="col-sm-7">
-                  <input type="password" class="form-control input-light" placeholder="**********">
+                <!-- <label class="col-sm-3 col-sm-offset-1 control-label label-dark">Password</label> -->
+                <div class="col-sm-8 col-sm-offset-3">
+                  <input type="password" class="form-control input-light" placeholder="PASSWORD">
                 </div>
               </div>
             </fieldset>
 
             <div class="form-group">
-              <div class="col-sm-8 col-sm-offset-4">
-                <button type="submit" class="btn-flat btn-flat-primary">Log in!</button>
+              <div class="col-sm-9 col-sm-offset-3">
+                <a href="/menu2.html">
+                  <button type="button" class="btn-flat btn-flat-primary">SIGN IN</button>
+                </a>
                 <a href="/register.html">
-                  <button type="button" class="btn-flat">Create new account</button>
+                  <button type="button" class="btn-flat">NEW ACCOUNT</button>
+                </a>
+              </div>
+              <div class="col-sm-6 col-sm-offset-4">
+                <a href="/menu1.html">
+                  <button type="button" class="menu-button">BACK</button>
                 </a>
               </div>
             </div>
           </form>
         </div>
       </div>
+    </div>
+    <div class="navbar navbar-fixed-bottom footer">
+      <hr>
+      ANANYMOUS®
     </div>
 
 
