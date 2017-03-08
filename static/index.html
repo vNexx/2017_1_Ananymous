@@ -12,7 +12,7 @@
     <div class="row">
       <div class="col-sm-offset-3 col-sm-6 block-content">
         <div class="col-sm-12">
-          <div class="logo">
+          <div class="logo" id="logo">
             HUNTING
             <span class="registered_sign">
               <img src="images/RegisteredTM.png" width="15px" alt="®">
@@ -21,7 +21,7 @@
           <br>
           <div class="col-sm-12">
             <a href="menu1.html">
-              <div class="hint_text">
+              <div class="hint_text" id="hint">
                 ENTER TO START
               </div>
             </a>
@@ -37,5 +37,24 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      var hint = document.getElementById("hint");
+      var opacityValue = 0.5;
+      var increment = true;
+      function changeOpacity() {
+        if(increment) {
+          opacityValue += 0.1;
+        } else {
+          opacityValue -= 0.1;
+        }
+        hint.style.opacity = opacityValue;
+
+        if(opacityValue >= 1 || opacityValue <= 0.3) {
+          increment = !increment;
+        }
+        setTimeout(changeOpacity, 130);
+      }
+      changeOpacity();
+    </script>
   </body>
 </html>

@@ -4,7 +4,7 @@
 }
 
 @font-face {
-  font-family: Micra2; /* Гарнитура шрифта */
+  font-family: Micra; /* Гарнитура шрифта */
   src: url(../fonts/micra_bold.ttf); /* Путь к файлу со шрифтом */
 }
 
@@ -26,6 +26,7 @@ hr {
   font-size: 550%;
   text-align: center;
   margin-top: 15px;
+  opacity: 0.7;
 }
 
 .header {
@@ -37,10 +38,11 @@ hr {
 }
 
 .hint_text {
-  font-family: Micra2;
+  font-family: Micra;
   font-size: xx-large;
   text-align: center;
-  color: #aaa;
+  color: #eee;
+  opacity: 1;
 }
 
 .block-content {
