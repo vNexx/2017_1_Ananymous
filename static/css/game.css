@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: Micra; /* Гарнитура шрифта */
-  src: url(../fonts/micra_bold.ttf); /* Путь к файлу со шрифтом */
+  src: url(../fonts/micra_bold.otf); /* Путь к файлу со шрифтом */
 }
 
 body {
@@ -70,7 +70,7 @@ hr {
 
 
 .menu-button {
-  font-size: 350%;
+  font-size: 210%;
   font-family: Micra;
   color: #bbb;
   background-color: transparent;
