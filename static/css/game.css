@@ -40,12 +40,14 @@ hr {
   color: #ccc;
 }
 
-.hint_text {
+.hint-button {
+  background: transparent;
+  border: none;
   font-family: Micra;
-  font-size: xx-large;
+  font-size: 300%;
   text-align: center;
   color: #eee;
-  opacity: 0;
+  opacity: 0.5;
 }
 
 .block-content {
