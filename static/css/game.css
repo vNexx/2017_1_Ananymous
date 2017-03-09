@@ -20,6 +20,9 @@ hr {
   margin-top: 0px;
 }
 
+.page-content {
+  margin-bottom: 100px;
+}
 
 .logo {
   font-family: Stone;
@@ -66,14 +69,14 @@ hr {
 
 .menu-button {
   font-size: 350%;
-  font-family: Stone;
+  font-family: Micra;
   color: #bbb;
   background-color: transparent;
-  border: none;
-  padding-top: 10px;
-  padding-bottom: 15px;
+  border: 5px solid;
+  padding-top: 5px;
+  padding-bottom: 5px;
   width: 100%;
-  margin: 5px;
+  margin: 10px;
   float: center;
 }
 
@@ -86,16 +89,16 @@ hr {
 }
 
 .btn-flat {
-  margin: 5px;
+  margin-top: 10px;
   color: #fff;
   font-family: Micra;
   background-color: transparent;
   border: #fff 2px solid;
   border-radius: 3px;
   padding-top: 5px;
-  padding-right: 15px;
+  width: 100%;
   padding-bottom: 5px;
-  padding-left: 15px;
+
 }
 
 .btn-flat:hover {
@@ -145,7 +148,6 @@ hr {
 }
 
 .footer {
-  z-index: 1030;
   width: 100%;
   height: 50px;
   margin-top: 20px;
