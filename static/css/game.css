@@ -15,7 +15,7 @@ body {
 }
 
 hr {
-  border-color: #aaa;
+  border-color: #F47C04;
   margin-bottom: 10px;
   margin-top: 0px;
 }
@@ -90,16 +90,21 @@ hr {
   font-family: Micra;
   color: #bbb;
   background-color: transparent;
-  border: 5px solid;
+  border: 2px solid #f47c04;
   padding-top: 5px;
   padding-bottom: 5px;
   width: 100%;
   margin: 10px;
   float: center;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  background-color: #000a;
 }
 
 .menu-button:hover {
-  color: #eee;
+  background-color: #F47C04;
+  color: #fff;
 }
 
 .menu-button:active {
