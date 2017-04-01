@@ -1,0 +1,58 @@
+.fade {
+  &__opacity {
+    position: absolute;
+    opacity: 0;
+    -webkit-animation-name: fadeOut;
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeOut;
+    animation-duration: 0.4s;
+
+    &-in {
+      opacity: 0.7;
+      -webkit-animation-name: fadeIn;
+      -webkit-animation-duration: 0.4s;
+      animation-name: fadeIn;
+      animation-duration: 0.4s;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.7;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.7;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 0.7;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 0.7;
+  }
+
+  to {
+    opacity: 0;
+  }
+}

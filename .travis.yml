@@ -1,0 +1,22 @@
+language: node_js
+sudo: required
+node_js:
+- '6'
+- '7'
+branches:
+  only:
+  - develop
+deploy:
+  provider: heroku
+  api_key:
+    secure: b9ec777b-f764-4ff1-abc5-55ef220ecdef
+  app: hunt-develop
+  on:
+    repo: vladpereskokov/2017_1_Ananymous
+    branch: develop
+  skip_cleanup: true
+install:
+  - npm install
+  - npm run eslint
+  - npm run test
+  - npm run webpack

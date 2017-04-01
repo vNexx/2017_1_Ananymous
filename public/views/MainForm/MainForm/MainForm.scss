@@ -1,0 +1,79 @@
+.main__form-button {
+  margin: 0 auto 50px;
+  height: 40px;
+  width: 300px;
+  cursor: pointer;
+
+  &__background {
+    margin: 0 auto 50px;
+    height: 60px;
+    width: 300px;
+    opacity: 0.9;
+    background: #171717;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #181818,
+    -10px -10px 10px #181818,
+    10px -10px 10px #181818,
+    -10px 10px 10px #181818;
+    position: absolute;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+  }
+
+  &__text {
+    font-family: 'Keep Calm';
+    font-size: 24pt;
+    top: 25%;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    margin-left: -10px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+  }
+}
+
+.wrapper__main__form {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow: auto;
+}
+
+.main__form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -125px 0 0 -125px;
+}
+
+.start__background {
+  background: #FF6C00 !important;
+  box-shadow: 10px 10px 10px #FF6C00,
+  -10px 10px 10px #FF6C00,
+  -10px -10px 10px #FF6C00,
+  10px -10px 10px #FF6C00 !important;
+}
+
+.start__button {
+  font-size: 30pt !important;
+  color: black !important;
+}
+
+.open__form__animation {
+  animation-name: open;
+  animation-duration: 3s;
+}
+
+@keyframes open__form {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+

@@ -1,0 +1,12 @@
+<fest:template xmlns:fest="http://fest.mail.ru" context_name="data">
+  <div class="wrapper__main__wrapper animation-open">
+    <div class="wrapper__main__header">
+      SOUL HUNTING
+      <p class="wrapper__main__header-register">&#174;</p>
+    </div>
+  </div>
+  <div class="footer">
+    <p class="footer-team">ANANYMOUS</p>
+    <p class="footer-register">&#174;</p>
+  </div>
+</fest:template>
