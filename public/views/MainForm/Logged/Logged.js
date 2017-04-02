@@ -10,7 +10,7 @@ export default class Logged extends MainForm {
   }
 
   init() {
-    this._setUrls(['/game', '/scoreboard', '']);
+    this._setUrls(['/game', '/scoreboard', '/about', '']);
 
     this._getElement().innerHTML = template({
       buttons: [{
@@ -18,31 +18,54 @@ export default class Logged extends MainForm {
       }, {
         text: 'SCOREBOARD'
       }, {
-        text: 'LOGOUT'
+        text: 'ABOUT'
+      }, {
+        text: 'LOGOUT',
+        class: 'button-logout'
       }],
       username: viewService.getUser().login
     });
 
     this._setMainButtons();
+    this._setGameButton();
     this._setLogoutButton();
   }
 
-  _setLogoutButton() {
-    this._findLogoutButton()
-      .addEventListener('click', this.logout.bind(this));
+  _setGameButton() {
+    console.log(this._getButton(0));
+
+    this._getButton(0)
+      .addEventListener('click', this._game.bind(this));
   }
 
-  logout() {
+  _game() {
+    viewService.showPreLoader();
+
+    this._hideAll();
+    viewService.go('/game');
+    viewService.hidePreLoader();
+  }
+
+  _hideAll() {
+    this._getDocument().querySelector('.wrapper').style.display = 'none';
+  }
+
+  _setLogoutButton() {
+    this._getButton(3)
+      .addEventListener('click', this._logout.bind(this));
+  }
+
+  _logout() {
     viewService.showPreLoader();
 
     viewService.logout()
       .then(() => {
-        viewService.hidePreLoader();
         viewService.go('/');
+        viewService.hidePreLoader();
       });
   }
 
-  _findLogoutButton() {
-    return this._buttons[2].button;
+  _getButton(number) {
+    return this._buttons[number].button;
   }
 }

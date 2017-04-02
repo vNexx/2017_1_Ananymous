@@ -12,7 +12,9 @@ class MainViewService {
   }
 
   getMainForm() {
-    return this._getState() ? new Logged() : new UnLogged();
+    this._form = this._getState() ? new Logged() : new UnLogged();
+
+    return this._form;
   }
 
   _getState() {

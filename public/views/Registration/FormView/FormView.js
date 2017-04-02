@@ -1,6 +1,7 @@
 import Block from '../../../components/Block/Block';
 import Popup from '../../../animations/Popup/Popup';
 import Fade from '../../../animations/Fade/Fade';
+import viewService from '../../../services/ViewService/ViewService';
 
 export default class FormView extends Block {
   constructor(form) {
@@ -24,12 +25,17 @@ export default class FormView extends Block {
     this._animationBackground.on();
     this._animationForm.on();
 
+    this._hideAll();
+
     this._formView._getElement().style.display = 'block';
   }
 
   hide() {
     this._animationBackground.off();
     this._animationForm.off();
+
+    viewService.go('/');
+    this._showAll();
 
     setTimeout(() => {
       this._formView._getElement().style.display = 'none';
@@ -38,6 +44,14 @@ export default class FormView extends Block {
 
   getForm() {
     return this._getElement();
+  }
+
+  _hideAll() {
+    this._getDocument().querySelector('.wrapper').style.display = 'none';
+  }
+
+  _showAll() {
+    this._getDocument().querySelector('.wrapper').style.display = 'block';
   }
 
   _initAnimation() {

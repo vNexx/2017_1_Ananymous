@@ -14,6 +14,14 @@ export default class MainForm extends Block {
     this.init();
   }
 
+  show() {
+    this._getElement().style.display = 'block';
+  }
+
+  hide() {
+    this._getElement().style.display = 'none';
+  }
+
   init() {
 
   }
