@@ -359,8 +359,8 @@ export default class GameScene {
 
                 // creates a bullet as a Mesh object
                 var bullet = new THREE.Mesh(
-                    new THREE.SphereGeometry(1,12,12),
-                    new THREE.MeshBasicMaterial({color:0x000000})
+                    new THREE.SphereGeometry(0.05,8,8),
+                    new THREE.MeshBasicMaterial({color:0x0000ff})
                 );
 
                 // position the bullet to come from the player's weapon
@@ -448,7 +448,7 @@ export default class GameScene {
             // position the gun in front of the camera
             meshes["playerweapon"].position.set(
                 controls.getObject().position.x - Math.sin(controls.getObject().rotation.y + Math.PI/6) * 0.75,
-                controls.getObject().position.y + Math.sin(time*4 + controls.getObject().position.x
+                controls.getObject().position.y + 2.1 + Math.sin(controls.getObject().position.x
                     + controls.getObject().position.z)*0.01,
                 controls.getObject().position.z + 7 + Math.cos(controls.getObject().rotation.y + Math.PI/6) * 0.75
             );
