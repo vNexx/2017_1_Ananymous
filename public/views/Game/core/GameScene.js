@@ -10,7 +10,7 @@ export default class GameScene {
         var geometry, material;
         var controls;
 
-        var player = { height: 1.8, speed: 0.2, turnSpeed: Math.PI*0.02, canShoot: 0 };
+        var player = { height: 1.8, speed: 0.2, turnSpeed: Math.PI*0.02, canShoot: 10 };
         var USE_WIREFRAME = false;
 
         var loadingManager = null;
@@ -372,9 +372,9 @@ export default class GameScene {
 
                 // set the velocity of the bullet
                 bullet.velocity = new THREE.Vector3(
-                    -Math.sin(camera.rotation.y),
+                    -Math.sin(controls.getObject().rotation.y),
                     0,
-                    Math.cos(camera.rotation.y)
+                    -Math.cos(controls.getObject().rotation.y)
                 );
 
                 // after 1000ms, set alive to false and remove from scene
@@ -384,6 +384,7 @@ export default class GameScene {
                 setTimeout(function(){
                     bullet.alive = false;
                     scene.remove(bullet);
+                    player.canShoot += 1;
                 }, 1000);
 
                 // add to scene, array, and set the delay to 10 frames
@@ -391,7 +392,7 @@ export default class GameScene {
                 scene.add(bullet);
                 player.canShoot -= 1;
             }
-            if(player.canShoot <= 0) player.canShoot = 10;
+           // if(player.canShoot <= 0) player.canShoot = 10;
         }
 
         function animate() {
