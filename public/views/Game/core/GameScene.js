@@ -11,7 +11,7 @@ export default class GameScene {
         var controls;
 
         var player = { height: 1.8, speed: 0.2, turnSpeed: Math.PI*0.02, canShoot: 10 };
-        var gunDistance = 6.4;
+        var gunDistance = 1.4;
         var USE_WIREFRAME = false;
 
         var loadingManager = null;
@@ -122,7 +122,7 @@ export default class GameScene {
 
             camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 1000 );
 
-            camera.position.set(0, player.height, -5);
+            camera.position.set(0, player.height, 0);
             camera.lookAt(new THREE.Vector3(0,player.height,0));
 
             clock = new THREE.Clock();
@@ -465,17 +465,17 @@ export default class GameScene {
 
             meshes["playerweapon"].position.set(
                 controls.getObject().position.x - gunDistance * Math.sin(controls.getObject().rotation.y - Math.PI/30),
-                controls.getObject().position.y + 1 + 8 * Math.sin(controls.getPitchObject().rotation.x),
-                controls.getObject().position.z - gunDistance * Math.cos(controls.getObject().rotation.y - Math.PI/30)
+                controls.getObject().position.y + 1 + Math.sin(controls.getPitchObject().rotation.x),
+                controls.getObject().position.z - gunDistance * Math.cos(controls.getObject().rotation.y - Math.PI/30) 
             );
             meshes["playerweapon"].rotation.set(
-                controls.getObject().rotation.x,
+                controls.getPitchObject().rotation.x,
                 controls.getObject().rotation.y - Math.PI,
                 0,
             );
 
 
-            console.log(meshes["playerweapon"].position.y);
+            console.log(meshes["playerweapon"].position.z);
 
             renderer.render( scene, camera );
 
