@@ -374,7 +374,7 @@ export default class GameScene {
                 // set the velocity of the bullet
                 bullet.velocity = new THREE.Vector3(
                     -Math.sin(controls.getObject().rotation.y),
-                    0,
+                     Math.sin(controls.getPitchObject().rotation.x),
                     -Math.cos(controls.getObject().rotation.y)
                 );
 
