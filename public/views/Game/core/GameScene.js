@@ -11,6 +11,7 @@ export default class GameScene {
         var controls;
 
         var player = { height: 1.8, speed: 0.2, turnSpeed: Math.PI*0.02, canShoot: 10 };
+        var gunDistance = 6.4;
         var USE_WIREFRAME = false;
 
         var loadingManager = null;
@@ -447,17 +448,34 @@ export default class GameScene {
             }
 
             // position the gun in front of the camera
+            // meshes["playerweapon"].position.set(
+            //     controls.getObject().position.x - Math.sin(controls.getObject().rotation.y + Math.PI/6) * 0.75,
+            //     controls.getObject().position.y + 2.1 + Math.sin(controls.getObject().position.x
+            //         + controls.getObject().position.z)*0.01,
+            //     controls.getObject().position.z + 7 + Math.cos(controls.getObject().rotation.y + Math.PI/6) * 0.75
+            // );
+
+            // meshes["playerweapon"].position.set(
+            //     controls.getObject().position.x - gunDistance * Math.sin(controls.getObject().rotation.y - Math.PI/30),
+            //     controls.getObject().position.y + gunDistance * Math.cos(controls.getPitchObject().rotation.x),
+            //     controls.getObject().position.z - gunDistance * Math.cos(controls.getObject().rotation.y - Math.PI/30) +
+            //         gunDistance * Math.sin(controls.getPitchObject().rotation.x)
+            // );
+
+
             meshes["playerweapon"].position.set(
-                controls.getObject().position.x - Math.sin(controls.getObject().rotation.y + Math.PI/6) * 0.75,
-                controls.getObject().position.y + 2.1 + Math.sin(controls.getObject().position.x
-                    + controls.getObject().position.z)*0.01,
-                controls.getObject().position.z + 7 + Math.cos(controls.getObject().rotation.y + Math.PI/6) * 0.75
+                controls.getObject().position.x - gunDistance * Math.sin(controls.getObject().rotation.y - Math.PI/30),
+                controls.getObject().position.y + 1 + 8 * Math.sin(controls.getPitchObject().rotation.x),
+                controls.getObject().position.z - gunDistance * Math.cos(controls.getObject().rotation.y - Math.PI/30)
             );
             meshes["playerweapon"].rotation.set(
                 controls.getObject().rotation.x,
                 controls.getObject().rotation.y - Math.PI,
-                controls.getObject().rotation.z
+                0,
             );
+
+
+            console.log(meshes["playerweapon"].position.y);
 
             renderer.render( scene, camera );
 
