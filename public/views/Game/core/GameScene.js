@@ -1,7 +1,7 @@
 import './PointerLockControls';
 import './MTLLoader';
 import './OBJLoader';
-
+import createMap from './map'
 
 export default class GameScene {
     constructor() {
@@ -306,6 +306,8 @@ export default class GameScene {
 
             }
 
+            createMap(scene);
+
             //
 
             renderer = new THREE.WebGLRenderer();
@@ -455,14 +457,6 @@ export default class GameScene {
             //     controls.getObject().position.z + 7 + Math.cos(controls.getObject().rotation.y + Math.PI/6) * 0.75
             // );
 
-            // meshes["playerweapon"].position.set(
-            //     controls.getObject().position.x - gunDistance * Math.sin(controls.getObject().rotation.y - Math.PI/30),
-            //     controls.getObject().position.y + gunDistance * Math.cos(controls.getPitchObject().rotation.x),
-            //     controls.getObject().position.z - gunDistance * Math.cos(controls.getObject().rotation.y - Math.PI/30) +
-            //         gunDistance * Math.sin(controls.getPitchObject().rotation.x)
-            // );
-
-
             meshes["playerweapon"].position.set(
                 controls.getObject().position.x - gunDistance * Math.sin(controls.getObject().rotation.y - Math.PI/30),
                 controls.getObject().position.y + 1 + Math.sin(controls.getPitchObject().rotation.x),
@@ -473,10 +467,6 @@ export default class GameScene {
                 controls.getObject().rotation.y - Math.PI,
                 0,
             );
-
-
-            console.log(meshes["playerweapon"].position.z);
-
             renderer.render( scene, camera );
 
         }
