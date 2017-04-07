@@ -1,23 +1,26 @@
-export default function createMap(scene) {
-    const height = 50;
-    const width = 100; //ширина
-    const length = 200; //длинна
+export default function createRoom(scene, x, y, z, width, len, height) {
+    height = height || 50 ;
+    width = width || 100; //ширина
+    len = len || 200; //длинна
+    x = x || 0;
+    y = y || 0;
+    z = z || 0;
 
     const walls = [
         {
-            position: [0, height/2, width/2],
-            geometry: [length, height, 1],
+            position: [x, y + height/2, z + width/2],
+            geometry: [len, height, 1],
             color: 0x000000
         }, {
-            position: [0, height/2, -width/2],
-            geometry: [length, height, 1],
+            position: [x, y + height/2, z - width/2],
+            geometry: [len, height, 1],
             color: 0xff0000
         }, {
-            position: [length/2, height/2, 0],
+            position: [x + len/2, y + height/2, z],
             geometry: [1, height, width],
             color: 0x0000ff
         }, {
-            position: [-length/2, height/2, 0],
+            position: [x - len/2, y + height/2, z],
             geometry: [1, height, width],
             color: 0x00ffff
         }

@@ -1,7 +1,7 @@
 import './PointerLockControls';
 import './MTLLoader';
 import './OBJLoader';
-import createMap from './map'
+import createRoom from './map'
 
 export default class GameScene {
     constructor() {
@@ -306,7 +306,8 @@ export default class GameScene {
 
             }
 
-            createMap(scene);
+            createRoom(scene);
+            createRoom(scene, 200,0,100);
 
             //
 
