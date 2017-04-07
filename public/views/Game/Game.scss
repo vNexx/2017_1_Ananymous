@@ -1,10 +1,8 @@
 #blocker {
 
-  position: absolute;
-
+  position: fixed;
   width: 100%;
   height: 100%;
-
   background-color: rgba(0,0,0,0.5);
 }
 
@@ -33,4 +31,36 @@
 
   cursor: pointer;
 
+}
+
+.game-stats {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin: 20px;
+  background-color: rgba(0, 0, 0, 0.51);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.user-stats {
+  position: absolute;
+  bottom: 0;
+  right: 30px;
+  margin: 20px;
+  color: #fff;
+}
+
+.user-stats__health-bar {
+  background-color: rgba(256, 0, 0, 0.75);
+  padding: 10px 20px 10px 70px;
+  text-align: right;
+  margin: 5px;
+}
+
+.user-stats__ammo-bar {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 20px 5px 70px;
+  margin: 5px;
+  text-align: right;
 }

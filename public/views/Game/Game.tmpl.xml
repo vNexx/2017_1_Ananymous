@@ -1,9 +1,22 @@
 <fest:template xmlns:fest="http://fest.mail.ru" context_name="data">
+  <div id="game-stats" class="game-stats">
+    <img src="/static/images/infinity-icon.png" width="30" alt="Infinity"></img>
+  </div>
   <div id="blocker">
     <div id="instructions">
       <span style="font-size:40px">Click to play</span>
       <br/>
       (W, A, S, D = Move, SPACE = Jump, MOUSE = Look around)
+    </div>
+  </div>
+  <div id="user-stats" class="user-stats">
+    <div id="ammo-bar" class="user-stats__ammo-bar">
+      <span id="ammo-bar__bullets-amount">10/10</span>
+      <img src="/static/images/bullet-icon.png" width="20" alt="Bullet"></img>
+    </div>
+
+    <div id="health-bar" class="user-stats__health-bar">
+      100 HP
     </div>
   </div>
 </fest:template>
